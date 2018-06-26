@@ -1,0 +1,20 @@
+<div style="padding:5px;" id="form_container">
+  <div style="" id="form_header">
+    <form action="%%[base_url]%%/reports/%%[report_name]%%/report.php" method="POST" name=form1 target="_blank">
+  </div>
+  <div style="clear:both;" id="form_footer">
+    <p>Please select preferred sort order for the users table</p>
+    <label class="radio-inline">
+      <input type="radio" name="usersort" value="idnum">By ID Number 
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="usersort" value="last">By Last Name
+    </label>
+    <br/>
+    <input type="submit" name="gen" value="Get Current Codes" class="save" tabindex="1" />
+    </form>
+  </div>
+</div>
+
+%%[ajax_init.js,javascript]%%
+%%[date_selector.js,javascript,parse]%%
